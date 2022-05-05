@@ -1,0 +1,20 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Fotoblog</title>
+        <link rel="stylesheet" href="{% static 'blog/styles.css' %}">
+    </head>
+    <body>
+        <h1>Fotoblog</h1>
+        {% block content %}{% endblock content %}
+        {% if user.is_authenticated %}
+        <p>Pour poster une photo cliquez <a href="{% url 'photo_upload' %}">ici</a></p>  
+        <p>
+                Vous êtes connecté en tant que {{ request.user }}.
+            <a href="{% url 'logout' %}">Se déconnecter</a>
+            <a href="{% url 'new_password' %}">Modifier le mot de passe</a>
+            </p>
+        {% endif %}
+    </body>
+</html>
