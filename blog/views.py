@@ -28,6 +28,7 @@ def photo_upload(request):
             photo = form.save(commit=False)
             photo.uploader = request.user
             photo.save()
-            return redirect('home')
+            photos = models.Photo.objects.all()
+            return render(request, 'blog/home.html', {'photos': photos})
     return render(request, 'blog/photo_upload.html',
     context={'form': form})
