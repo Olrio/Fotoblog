@@ -6,3 +6,161 @@
 {
     color:red;
 }
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav {
+    width: 19%;
+    position: fixed;
+    left: 1%;
+    top: 20px;
+}
+
+
+article {
+    width: 78%;
+    position: absolute;
+    right: 0px;
+    border: 2px black solid;
+    margin-right: 5px;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photo_mini {
+    flex-direction: column;
+
+}
+
+#photo_mini p {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+article img {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+nav, p, a, h1 {
+    background-color:black;
+}
+
+nav h1 {
+    margin-left: 10px;
+    font-size: 3em;
+}
+
+nav p {
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.fa-circle-user {
+    color: white;
+    background-color: black;
+    font-size: 15em;    
+}
+
+p, a, h1 {
+    color: white;
+}
+
+.logout, .login, .signup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 2px black solid;
+    padding: 10px;
+}
+
+.logout form, .login form, .signup form, article form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logout button, .login button, .signup button, article button  {
+    background-color: aquamarine;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-self: center;
+}
+
+.login p, .signup p {
+    color: black;
+    background-color: lightblue;
+}
+
+.login a, .signup a { 
+    color: blue;
+    background-color: lightblue;
+}
+
+.signup h2 {
+    text-align: center;
+}
+
+article p {
+    background-color: lightblue;
+    color: black;
+    margin-left: 10px;
+
+}
+
+.profile_photo {
+    width: 200px;
+    clip-path: ellipse(33% 50%);
+}
+
+@media screen and (max-width: 1300px) {
+    nav h1 {
+        font-size: 1em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    body {
+        margin-left: 0;
+    }
+
+    nav {
+        left: 0;
+    }
+
+    nav p {
+        margin-left: 0;
+        font-size: 0.8em;
+    }
+
+    .fa-circle-user {
+        font-size: 4.5em;
+    }
+        
+}

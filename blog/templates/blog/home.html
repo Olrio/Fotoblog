@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
+<article>
     <h2>Photos</h2>
-    {% for photo in photos %}
-        <img src="{{ photo.image.url }}" alt="">
-        <p>{{ photo.caption }}</p>
-    {% endfor %}
+    <div>
+        {% for photo in photos %}
+        <div id="photo_mini">
+            <img src="{{ photo.image.url }}" alt="">
+            {% if photo.caption %}
+                    <p>{{ photo.caption }}</p>
+            {% else %}
+                    <p> </p>
+            {% endif %}
+        </div>
+            
+        {% endfor %}
+    </div>
+    
+</article>
 {% endblock content %}

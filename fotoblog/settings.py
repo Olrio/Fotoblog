@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authentication',
     'blog',
+    'fontawesomefree',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +91,9 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'authentication.validators.ContainsLetterValidator',
+        'NAME': 'authentication.validators.ContainsLetterValidator'},
+        {
+        'NAME': 'authentication.validators.ContainsNumberValidator'
     },
 ]
 

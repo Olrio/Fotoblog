@@ -43,6 +43,7 @@ urlpatterns = [
     path('home/', blog.views.HomeView.as_view(), name='home'),
     path('signup/', authentication.views.signup_page, name='signup'),
     path('photo/upload/', blog.views.photo_upload, name='photo_upload'),
+    path('profile_photo/', authentication.views.upload_profile_photo, name='profile_photo'),
 ]
 
 if settings.DEBUG:
