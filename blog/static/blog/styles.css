@@ -1,6 +1,6 @@
-* {
+/* * {
     background: lightblue;
-}
+} */
 
 .errorlist
 {
@@ -10,6 +10,7 @@
 body {
     display: flex;
     flex-wrap: nowrap;
+    background-color: beige;
 }
 
 nav {
@@ -26,6 +27,7 @@ article {
     right: 0px;
     border: 2px black solid;
     margin-right: 5px;
+    background-color:lightblue;
 }
 
 article h2 {
@@ -38,6 +40,24 @@ article div {
     justify-content: space-around;
 }
 
+article h4 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+article img {
+    margin-bottom: 15px;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    }
+
+
+article a {
+    color:black;
+    background-color: lightblue;
+}
+
 #photo_mini {
     flex-direction: column;
 
@@ -45,20 +65,15 @@ article div {
 
 #photo_mini p {
     background-color: lightblue;
-    color: black;
+    color: red;
     font-weight: bold;
     align-self: center;
     margin-top: 5px;
     margin-bottom: 30px;
 }
 
-article img {
-    height: 250px;
-    width: 350px;
-    border-radius: 10px;
-}
 
-nav, p, a, h1 {
+nav, a, h1 {
     background-color:black;
 }
 
@@ -97,6 +112,8 @@ p, a, h1 {
     margin: auto;
     border: 2px black solid;
     padding: 10px;
+    background-color: lightblue;
+
 }
 
 .logout form, .login form, .signup form, article form {
@@ -115,7 +132,6 @@ p, a, h1 {
 
 .login p, .signup p {
     color: black;
-    background-color: lightblue;
 }
 
 .login a, .signup a { 
